@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+}
+
+body {
+	background-color: #eaf1f8;
+	padding: 0 2.5rem 0 1.5rem;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 2;
+}
+
+h2 {
+	font-style: 2.5rem;
+	margin-bottom: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+}
+
+h3 {
+	font-style: 0.1rem;
+	margin-bottom: 1rem;
+	letter-spacing: .1rem;
+}
+
+h4 {
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 20px;
+	display: block;
+  margin-block-start: 1em;
+	margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	margin-top: 2.5rem;
+}
+
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+	background-color: #ffec1a;
+}
+
+.menu {
+	weight:100%;
+	padding: 2rem 0;
+}
+
+#logo {
+	font-size: 1.5rem;
+	color: #007FFF;
+	font-family: American Typewriter, serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.headline {
+	height: 100vh;
+	margin-right: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.horizontalLine__container {
+  align-items: center;
+  display: flex;
+}
+.horizontalLine {
+  border-top: 1px solid;
+}
+
+	.shortLine {
+		width: 50%;
+	}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	word-wrap: break-word;
+}
+
+	.subhead {
+		font-size: 20px;
+		font-style: italic;
+		margin-right: 3.5rem;
+		margin-bottom: 20px;
+		word-wrap: break-word;
+	}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2.5rem;
+	}
+
+	.column1 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+		margin-right: 1rem;
+	}
+
+	.column2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		align-content: stretch;
+		margin-right: 1rem;
+	}
+
+.button {
+	margin: 3rem 0 3rem 0;
+}
+
+#linkedinBtn {
+	color: black;
+	text-decoration: none;
+	padding: 20px 50px 20px 50px;
+	cursor: pointer;
+  background-size: 500px 300px;
+  transition: 0.9s;
+	border: solid;
+	border-color: #ffec1a;
+}
+
+#linkedinBtn:hover {
+	box-shadow: inset 0 0 0 35px #ffec1a;
+}
+
+#li-logo {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	padding-bottom: 20px;
+}
+
+.footer_bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+/* The sidepanel menu */
+.sidepanel {
+	position: fixed;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  z-index: 1; /* Stay on top */
+  right: 0rem;
+  background-color: #007FFF; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel icon */
+.sidepanel-icon {
+	padding-bottom: 10px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+  text-decoration: none;
+  font-size: 3vw;
+  color: #eaf1f8;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  background-color: #eaf1f8;
+	color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: relative;
+	width: 5rem;
+  font-size: 20px;
+}
+
+.sidepanel .closebtn:hover {
+	background-color: #ffec1a;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+	position: fixed;
+	top: 1.8rem;
+	right: 1.5rem;
+  font-size: 20px;
+  background-color: #ffec1a;
+  color: white;
+  border: none;
+	padding: 0.2rem 0.3rem 0 0.3rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 550px) {
+	body {
+		padding: 0 2.5rem;
+	}
+
+	.sidepanel a {
+	  font-size: 14px;
+	}
+
+	.headline {
+		margin-right: 3rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		padding: 0 5rem;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+		line-height: 2.3;
+	}
+
+	.menu {
+		padding: 4rem 0 1rem 0;
+	}
+
+	#menuBtn {
+		right: 4rem;
+	  padding: 0.4rem 0.5rem 0 0.5rem;
+	}
+
+	.headline {
+		width: 70%;
+	}
+}
